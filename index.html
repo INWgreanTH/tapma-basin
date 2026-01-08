@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tap Ma Basin Hub | Rayong 2026</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="top-bar">
@@ -25,26 +26,32 @@
                     <pattern id="earthquake" patternUnits="userSpaceOnUse" width="300" height="300"><image href="https://images.pexels.com/photos/30190705/pexels-photo-30190705.jpeg" width="300" height="300" preserveAspectRatio="xMidYMid slice" /></pattern>
                     <pattern id="air" patternUnits="userSpaceOnUse" width="300" height="300"><image href="https://images.pexels.com/photos/257775/pexels-photo-257775.jpeg" width="300" height="300" preserveAspectRatio="xMidYMid slice" /></pattern>
                 </defs>
+
                 <g class="hex-group" data-page="rainRadar">
                     <polygon class="hex-face" points="150,20 40,85 150,150" fill="url(#radar)" />
                     <text x="95" y="85" class="hex-icon-label">RADAR</text>
                 </g>
-                <g class="hex-group" data-page="rainfallVolume">
-                    <polygon class="hex-face" points="150,20 260,85 150,150" fill="url(#water)" />
-                    <text x="205" y="85" class="hex-icon-label">WATER</text>
-                </g>
+
+                <g class="hex-group" data-page="waterLevel">
+    <polygon class="hex-face" points="150,20 260,85 150,150" fill="url(#water)" />
+    <text x="205" y="85" class="hex-icon-label">WATER</text>
+</g>
+
                 <g class="hex-group" data-page="rainForecast">
                     <polygon class="hex-face" points="260,85 260,215 150,150" fill="url(#forecast)" />
                     <text x="210" y="155" class="hex-icon-label">FORECAST</text>
                 </g>
+
                 <g class="hex-group" data-page="seaTides">
                     <polygon class="hex-face" points="260,215 150,280 150,150" fill="url(#tides)" />
                     <text x="205" y="225" class="hex-icon-label">TIDES</text>
                 </g>
+
                 <g class="hex-group" data-page="earthquakeReports">
                     <polygon class="hex-face" points="150,280 40,215 150,150" fill="url(#earthquake)" />
                     <text x="95" y="225" class="hex-icon-label">QUAKE</text>
                 </g>
+
                 <g class="hex-group" data-page="airQualityPM25">
                     <polygon class="hex-face" points="40,215 40,85 150,150" fill="url(#air)" />
                     <text x="90" y="155" class="hex-icon-label">PM 2.5</text>
@@ -61,6 +68,7 @@
             <div id="panel-content"></div>
         </aside>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
